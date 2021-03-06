@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 87.5%;
+}
+
+@media screen and (min-width: 500px){
+  *{
+    font-size: 93.7%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  min-width: 360px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  color: #D6000D;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+header .menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+header .menu li {
+  margin-right: 4rem;
+  font-size: 1rem;
+}
+
+header .menu li:last-child {
+  margin-right: 0;
+}
+
+main .landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .landing img {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+main .landing .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .landing p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+main .landing h2 {
+  color: #D6000D;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+}
+
+main .landing .btnQuote{
+  border: none;
+  border-radius: 1rem;
+  background-color: #D6000D;
+  color: #FFF;
+  font-size: 1rem;
+
+  width: 70%;
+  height: 7vh;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+main .info .infoContent img {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+main .info .infoContent .advantages {
+  list-style: none;
+
+  width: 70%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .info .infoContent .advantages img {
+  width: 7%;
+  margin: 1rem 1rem;
+}
+
+main .info .infoContent .advantages li{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+main .info .callToAction,
+main .info .callToAction form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .info .callToAction {
+  margin-top: 2rem;
+}
+
+main .info .callToAction p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+main .info .callToAction form {
+  width: 90%;
+}
+
+main .info .callToAction input{
+  border: none;
+  border-radius: 1rem;
+  background-color: #DCDCDC;
+  color: #FFF;
+  font-size: 1rem;
+
+  width: 70%;
+  height: 7vh;
+}
+
+main .info .callToAction button{
+  border: none;
+  border-radius: 1rem;
+  background-color: #D6000D;
+  color: #FFF;
+  font-size: 1rem;
+
+  width: 70%;
+  height: 7vh;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+main .feedback {
+  background: #DCDCDC;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  
+  display: flex;
+  align-items: flex-start;
+}
+
+main .feedback img {
+  margin-right: 1.5rem;
+}
+
+main .feedback h2 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+main .feedback p:last-child {
+  font-weight: bold;
+}
+
+footer {
+  background: #000;
+  color: #FFF;
+  font-size: 1rem;
+}
+
+footer h1 {
+  font-size: 2rem;
+}
+
+footer .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 1.5rem 0;
+}
+
+footer .contact h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+footer .media {
+  padding: 2rem 0;
+}
+
+footer .media .fab {
+  color: #D6000D;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  *{
+    font-size: 100%;
+  }
+
+  .container header {
+    margin: 0 -3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main .landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
+  main .landing .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .landing .description p,
+  main .landing .description button.btnQuote {
+    margin: 0;
+    padding: 0;
+  }
+
+  main .info .infoContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "advantages img";
+
+    margin: 5rem 0 0 0;
+  }
+
+  main .landing .description h2 {
+    margin: 1.5rem 0;
+  }
+
+  main .info .infoContent img {
+    grid-area: img;
+  }
+
+  main .info .infoContent .advantages {
+    margin-left: 0;
+
+    grid-area: advantages;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .info .callToAction {
+    margin: -1.5rem 0 10rem 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  main .info .callToAction form {
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  main .info .callToAction form button {
+    margin: 0 0 0 1rem;
+  }
+
+  main .feedbacks {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  main .feedback {
+    margin-bottom: 0;
+  }
+
+  footer .container {
+    padding: 4rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  footer .container .slogan,
+  footer .container .media {
+    padding: 0;
+  }
+
+  footer .container .contact h2 {
+    margin-top: 0;
+  }
+
+  footer .container .contact a{
+    color: #FFF;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    font-size: 106.7%;
+  }
+  .container {
+    max-width: 1024px;
+  }
+}
+
